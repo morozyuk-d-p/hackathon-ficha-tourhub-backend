@@ -9,3 +9,8 @@ class Location(models.Model):
     description = models.TextField(verbose_name='Описание', max_length=500, default=None, blank=True)
     latitude = models.DecimalField(verbose_name='Широта', decimal_places=6, max_digits=9)
     longitude = models.DecimalField(verbose_name='Долгота', decimal_places=6, max_digits=9)
+
+    class Meta:
+        verbose_name = 'место'
+        verbose_name_plural = 'места'
+        
